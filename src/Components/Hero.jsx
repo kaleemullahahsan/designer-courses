@@ -22,12 +22,12 @@ function Hero() {
               </div>
             </div>
             <div
-              className="overflow-hidden flex justify-center items-center after:h-80 after:w-80 after:bg-(--accent) after:rounded-full after:absolute"
+              className="overflow-hidden  after:overflow-hidden after:relative h-110 flex justify-center items-center after:h-80 after:w-80 after:bg-(--accent) after:rounded-full"
               data-aos="fade-in"
             >
               <img
                 src={`${bannerImg}`}
-                className="grayscale z-10 h-160"
+                className="grayscale z-10 md:h-160  absolute h-[100%]"
                 alt=""
                 data-aos="fade-up"
               />

@@ -1,27 +1,22 @@
-
 const Testimonials = [
   {
     id: 1,
-    image : "src/assets/images/elipse_1_3.png",
-    name: "Laura smith",
-    description:
-      "ipsum dolor sit amet consectetur adipisicing elit. Enim culpa alias accusamus nam nemo nulla.",
+    image : "/images/elipse_1_3.png",
+    name: "Laura Smith",
+    description: "..."
   },
-    {
+  {
     id: 2,
-    image : "src/assets/images/elipse_1_2.png",
-    name: "Jhon smiteh",
-     description:
-      "ipsum dolor sit amet consectetur adipisicing elit. Enim culpa alias accusamus nam nemo nulla.",
+    image : "/images/elipse_1_2.png",
+    name: "Jhon Smiteh",
+    description: "..."
   },
-
-   {
+  {
     id: 3,
-    image : "src/assets/images/elipse_1.png",
-    name: "Sara smiteh",
-     description:
-      "ipsum dolor sit amet consectetur adipisicing elit. Enim culpa alias accusamus nam nemo nulla.",
-  },
+    image : "/images/elipse_1.png",
+    name: "Sara Smiteh",
+    description: "..."
+  }
 ];
 
-export default Testimonials
+export default Testimonials;
