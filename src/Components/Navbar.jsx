@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <>
       <header
-        className="flex justify-between container items-center md:py-10 md:px-12 p-5 w-[100%] gap-5"
+        className="flex fixed lg:relative top-0 left-0 justify-between container items-center md:py-10 md:px-12 p-5 w-[100%] gap-5"
         data-aos="fade-down"
       >
         <a href="/">
