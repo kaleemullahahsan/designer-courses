@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap");
+@theme {
+  --accent: #a06bf7;
+  --background: #0e0e0e;
+  --text-primary: #ffffff;
+  --text-secondary: #c1c1c1;
+  --overlay: #f5f5f5;
+}
+@layer base {
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  @keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+  }
+
+  .animate-orbit {
+    animation: orbit 6s linear infinite;
+  }
+  .opacity-10 span{
+    opacity: 100% !important;
+  }
+  .container{
+    max-width:1500px;
+    margin: auto;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply py-1 hover:after:border-1 after:border-white hover:after:w-[100%]  hover:after:flex after:transition-all after:duration-300 after:ease-in-out after:absolute relative after:-bottom-4 after:left-0 after:w-0 after:border-0;
+  }
+   .active{
+    @apply after:border-1 after:border-white after:w-[100%]  after:absolute relative after:-bottom-4 after:left-0
+  }
+  .hero-head{
+    @apply text-7xl after:h-4 after:w-4 relative after:bottom-2 after:ml-3 after:absolute after:rounded-full after:bg-(--accent)
+  }
+  .pr-btn{
+    @apply px-8 py-3 transition-all text-sm duration-150 ease-in-out uppercase rounded  font-semibold bg-(--accent) cursor-pointer;
+  }
+  .pr-btn:hover{
+    @apply bg-[#7325f3];
+  }
+}
