@@ -7,7 +7,7 @@ function Hero() {
       <section className="md:px-12 p-5 pb-0 min-h-[100vh] overflow-hidden flex items-center container">
         <div className="w-[100%]">
           <div className="grid lg:grid-cols-3 w-[100%] gap-15 mt-10">
-            <div className="flex-col">
+            <div className="flex-col order-2">
               <h2 className="hero-head" data-aos="fade-right">
                 UI
               </h2>
@@ -22,7 +22,7 @@ function Hero() {
               </div>
             </div>
             <div
-              className="relative overflow-hidden rounded-full md:rounded-none flex justify-center items-end md:items-center h-[400px] sm:h-[400px] md:h-[500px] lg:h-[600px]"
+              className="order-1 lg:order-2 relative overflow-hidden rounded-full md:rounded-none flex justify-center items-end md:items-center h-[400px] sm:h-[400px] md:h-[500px] lg:h-[600px]"
               data-aos="fade-in"
             >
               <div className="absolute h-80 w-80 bg-[var(--accent)] rounded-full z-0"></div>
@@ -35,7 +35,7 @@ function Hero() {
               />
             </div>
 
-            <div className="flex justify-center flex-col items-center relative z-30 ">
+            <div className=" order-3 flex justify-center flex-col items-center relative z-30 ">
               <div
                 className="hidden absolute top-0 -right-13 py-5 pl-5 pr-20 border-1 border-white border-r-0 lg:flex flex-col font-bold uppercase"
                 data-aos="fade-left"

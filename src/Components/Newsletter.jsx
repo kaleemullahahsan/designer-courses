@@ -25,7 +25,7 @@ function Newsletter() {
             <button className="pr-btn mt-2">Send Message</button>
           </form>
         </div>
-        <div><img className="w-[50%] grayscale absolute left-0 bottom-0" src={`${bgImage}`} alt="" data-aos="zoom-in"/></div>
+        <div><img className="w-[50%] grayscale absolute left-0 bottom-0 z-10" src={`${bgImage}`} alt="" data-aos="zoom-in"/></div>
       </div>
     </>
   );
