@@ -1,9 +1,9 @@
 function Footer() {
   return (
     <>
-      <div className="bg-(--accent) pt-30" data-aos="fade-in">
-        <div className="md:px-15 p-5 grid md:grid-cols-2 pb-10 container gap-20 ">
-          <div className="grid md:grid-cols-2 gap-10">
+      <div className="bg-(--accent) pt-30 overflow-hidden" data-aos="fade-in">
+        <div className="md:px-15 p-5 grid md:grid-cols-2 pb-10 overflow-hidden container gap-20 ">
+          <div className="grid md:grid-cols-2 gap-10 overflow-hidden">
             <div data-aos="fade-right">
               <h3 className="active w-max capitalize text-2xl">About</h3>
               <ul className="mt-10 capitalize text-lg space-y-1">
