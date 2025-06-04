@@ -4,7 +4,7 @@ import allTestimonials from "../Apis/Testimonials";
 function Testimonials() {
   return (
     <>
-      <div className="px-12">
+      <div className="md:px-12 p-5">
         <div className="my-35 container">
           <div className="text-center" data-aos="fade-in">
             <span className="text-5xl uppercase font-bold">What</span>
@@ -42,7 +42,7 @@ function Testimonials() {
                 <p className="font-semibold relative ">
                   <span className="text-4xl mr-2 text-(--accent)">❝</span> Lorem
                   {course.description}
-                  <span className="text-4xl ml-2 absolute right-22 -bottom-6 text-(--accent)">
+                  <span className="text-4xl ml-2 absolute md:right-22 right-8 -bottom-6 text-(--accent)">
                     ❞
                   </span>
                 </p>

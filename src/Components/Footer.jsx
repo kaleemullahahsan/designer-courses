@@ -2,7 +2,7 @@ function Footer() {
   return (
     <>
       <div className="bg-(--accent) pt-30" data-aos="fade-in">
-        <div className="px-15 grid md:grid-cols-2 pb-10 container gap-20 ">
+        <div className="md:px-15 p-5 grid md:grid-cols-2 pb-10 container gap-20 ">
           <div className="grid md:grid-cols-2 gap-10">
             <div data-aos="fade-right">
               <h3 className="active w-max capitalize text-2xl">About</h3>
@@ -49,10 +49,10 @@ function Footer() {
             className="space-y-10 flex  mdjustify-end flex-col md:items-end"
             data-aos="fade-left"
           >
-            <h2 className="capitalize text-3xl md:text-end text-center">
+            <h2 className="capitalize text-2xl md:text-3xl md:text-end text-center">
               Sign up to receive
               <br></br>
-              <span className="before:absolute before:border-1 before:border-white relative before:w-[30%] before:bottom-3 before:-left-20">
+              <span className="before:absolute before:border-1 before:border-white relative before:w-[30%] before:bottom-3 md:before:-left-20 before:-left-14">
                 Our Newsletter
               </span>
             </h2>

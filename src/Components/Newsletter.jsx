@@ -2,8 +2,8 @@ import bgImage from "../assets/images/newsletter-bg.png";
 function Newsletter() {
   return (
     <>
-      <div className={`px-15 flex justify-end items-end relative `}>
-        <div className="max-w-160 mt-20 " data-aos="fade-up-left">
+      <div className={`md:px-15 p-5 flex justify-end items-end relative `}>
+        <div className="max-w-160 md:mt-20 mt-0" data-aos="fade-up-left">
           <div className="text-center">
             <h3 className="text-3xl">Subscribe</h3>
             <span className="text-(--accent) text-4xl tracking-widest">to our newsletter</span>
