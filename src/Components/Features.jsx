@@ -1,6 +1,6 @@
 function Features() {
   return (
-    <div className="shadow-[0px_0px_10px_10px_black] py-15 overflow-hidden" data-aos="fade-up">
+    <div className="shadow-[0px_0px_10px_10px_black] relative bg-(--background) z-20 py-15 overflow-hidden" data-aos="fade-up">
       <div className="flex justify-evenly items-center flex-col md:flex-row gap-15 md:gap-0">
         <div className="flex justify-center gap-3 items-center">
             <span className="font-semibold text-5xl before:content-['+'] before:text-4xl before:text-(--accent)">150</span>

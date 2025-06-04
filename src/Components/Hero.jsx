@@ -4,7 +4,7 @@ import bannerImg from "../assets/images/banner-img.png";
 function Hero() {
   return (
     <>
-      <section className="md:px-12 p-5 min-h-[100vh] overflow-hidden flex items-center container">
+      <section className="md:px-12 p-5 pb-0 min-h-[100vh] overflow-hidden flex items-center container">
         <div className="w-[100%]">
           <div className="grid lg:grid-cols-3 w-[100%] gap-15 mt-10">
             <div className="flex-col">
@@ -22,17 +22,20 @@ function Hero() {
               </div>
             </div>
             <div
-              className="overflow-hidden  after:overflow-hidden after:relative h-110 flex justify-center items-center after:h-80 after:w-80 after:bg-(--accent) after:rounded-full"
+              className="relative overflow-hidden rounded-full md:rounded-none flex justify-center items-end md:items-center h-[400px] sm:h-[400px] md:h-[500px] lg:h-[600px]"
               data-aos="fade-in"
             >
+              <div className="absolute h-80 w-80 bg-[var(--accent)] rounded-full z-0"></div>
+
               <img
-                src={`${bannerImg}`}
-                className="grayscale z-10 md:h-160  absolute h-[100%]"
+                src={bannerImg}
+                className="absolute z-10 h-full w-auto object-top grayscale"
                 alt=""
                 data-aos="fade-up"
               />
             </div>
-            <div className="flex justify-center flex-col items-center relative">
+
+            <div className="flex justify-center flex-col items-center relative z-30 ">
               <div
                 className="hidden absolute top-0 -right-13 py-5 pl-5 pr-20 border-1 border-white border-r-0 lg:flex flex-col font-bold uppercase"
                 data-aos="fade-left"
@@ -46,7 +49,10 @@ function Hero() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                   ipsa iste magnam, asperiores assumenda debitis.
                 </p>
-                <a href="#" className="pr-btn md:px-8 md:py-3 px-4 py-2 text-nowrap">
+                <a
+                  href="#"
+                  className="pr-btn md:px-8 md:py-3 px-4 py-2 text-nowrap"
+                >
                   Let's Start
                 </a>
                 <a
