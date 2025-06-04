@@ -5,7 +5,7 @@ import footerArrow from "../assets/images/arrow_3.png";
 function Challenges() {
   return (
     <div className="py-40 container" >
-      <div className=" px-12 flex justify-between gap-5">
+      <div className="md:px-12 p-5 flex justify-between gap-5">
         <div className="before:top-52 before:left-0 uppercase font-semibold before:h-3 before:w-3 before:absolute relative before:bg-white" data-aos="fade-up">
           <img src={`${leftImg}`} alt="" />
         </div>
