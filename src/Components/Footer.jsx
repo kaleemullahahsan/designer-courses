@@ -70,7 +70,7 @@ function Footer() {
               <span className="md:text-xl text-lg">Follow us!</span>
               <a
                 href="#"
-                className="bg-white md:text-2xl text-(--accent) px-4 py-2 md:px-4 md:py-3 rounded-full"
+                className="bg-white md:text-2xl text-(--accent) px-4 py-2 md:px-5 md:py-3 rounded-full"
               >
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
@@ -93,7 +93,7 @@ function Footer() {
           <span className="bg-white p-4 px-8   rounded-t-lg shadow-2xl text-(--accent)">
             © 2025 Website By{" "}
             <a
-              href="https://seraprogrammer/ahsan"
+              href="https://seraprogrammer.com/ahsan"
               className="uppercase hover:text-[#7325f3]"
             >
               Ahsan

@@ -27,7 +27,7 @@ function Challenges() {
         <span className="md:text-3xl uppercase opacity-10 font-bold text-(--text-secondary)" data-aos="fade-right">
           Explore
         </span>
-        <a href="" data-aos="fade-down" className="max-w-4 md:max-w-none">
+        <a href="#testimonials" data-aos="fade-down" className="max-w-4 md:max-w-none">
           <img src={`${footerArrow}`} alt="" />
         </a>
         <span className="md:text-3xl text-xl uppercase opacity-10 font-bold text-(--text-secondary)" data-aos="fade-left">

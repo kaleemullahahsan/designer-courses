@@ -1,7 +1,7 @@
 import allCourses from "../Apis/Courses";
 function Courses() {
   return (
-    <div className="md:px-12 p-5 overflow-hidden">
+    <div className="md:px-12 p-5 overflow-hidden" id="courses">
       <div className="container">
         <div className="text-header flex justify-between">
           <h2 data-aos="fade-right">
