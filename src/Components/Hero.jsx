@@ -4,7 +4,7 @@ import bannerImg from "../assets/images/banner-img.png";
 function Hero() {
   return (
     <>
-      <section className="px-12 min-h-[100vh] overflow-hidden flex items-center container">
+      <section className="md:px-12 p-5 min-h-[100vh] overflow-hidden flex items-center container">
         <div className="w-[100%]">
           <div className="grid lg:grid-cols-3 w-[100%] gap-15 mt-10">
             <div className="flex-col">

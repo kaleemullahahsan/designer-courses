@@ -1,7 +1,7 @@
 import allCourses from "../Apis/Courses";
 function Courses() {
   return (
-    <div className="px-12">
+    <div className="md:px-12 p-5">
       <div className="container">
         <div className="text-header flex justify-between">
           <h2 data-aos="fade-right">
@@ -13,7 +13,7 @@ function Courses() {
             <span className="md:text-2xl font-bold">2025</span>
           </span>
         </div>
-        <div className="courses mt-20 grid md:grid-cols-4 gap-10">
+        <div className="courses md:mt-20 mt-10 grid md:grid-cols-4 gap-10">
          {allCourses.map((course) => (
         <div
           key={course.id}
