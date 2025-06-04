@@ -46,12 +46,12 @@ function Hero() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                   ipsa iste magnam, asperiores assumenda debitis.
                 </p>
-                <a href="#" className="pr-btn">
+                <a href="#" className="pr-btn md:px-8 md:py-3 px-4 py-2 text-nowrap">
                   Let's Start
                 </a>
                 <a
                   href="#"
-                  className="px-8 py-3 rounded capitalize font-semibold text-sm"
+                  className="md:px-8 md:py-3 px-4 py-2 rounded capitalize font-semibold text-sm text-nowrap"
                 >
                   Read more
                 </a>

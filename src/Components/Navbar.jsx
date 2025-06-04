@@ -15,7 +15,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       <header
-        className="flex justify-between container items-center py-10 px-12 w-[100%]"
+        className="flex justify-between container items-center md:py-10 md:px-12 p-5 w-[100%] gap-5"
         data-aos="fade-down"
       >
         <a href="#">
@@ -54,7 +54,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
         <div className="cta-btn text-nowrap flex justify-center items-center gap-5">
           <a
             href="#"
-            className="rounded bg-white text-(--background) py-2 px-5 uppercase font-bold"
+            className="rounded bg-white text-(--background) md:py-2 md:px-5 px-3 py-1 uppercase font-bold"
           >
             sign in
           </a>
