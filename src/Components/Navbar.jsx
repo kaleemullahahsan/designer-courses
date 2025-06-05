@@ -12,7 +12,7 @@ function Navbar() {
     setIsMenuOpen(false);
   };
 
-    const [activeLink, setActiveLink] = useState("/");
+  const [activeLink, setActiveLink] = useState("/");
 
   const links = [
     { href: "/", label: "Home" },
@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <>
       <header
-        className="flex fixed lg:relative top-0 left-0 justify-between container items-center md:py-10 md:px-12 p-5 w-[100%] gap-5"
+        className="flex z-90 bg-(--background) fixed lg:relative top-0 left-0 justify-between container items-center md:py-10 md:px-12 p-5 w-[100%] gap-5"
         data-aos="fade-down"
       >
         <a href="/">
@@ -37,20 +37,20 @@ function Navbar() {
           } justify-center bg-(--background) w-[100%] top-0 left-0 lg:relative `}
         >
           <ul className="flex justify-center items-center gap-10 lg:gap-30 font-bold uppercase flex-col lg:flex-row">
-      {links.map((link) => (
-        <li key={link.href}>
-          <a
-            href={link.href}
-            className={`nav-link ${
-              activeLink === link.href ? "active" : ""
-            }`}
-            onClick={() => setActiveLink(link.href)}
-          >
-            {link.label}
-          </a>
-        </li>
-      ))}
-    </ul>
+            {links.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={`nav-link ${
+                    activeLink === link.href ? "active" : ""
+                  }`}
+                  onClick={() => setActiveLink(link.href)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
           <div className="absolute top-5 right-5 lg:hidden" onClick={closeMenu}>
             <span class="material-symbols-outlined">close</span>
           </div>
