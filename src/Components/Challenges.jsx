@@ -45,7 +45,7 @@ function Challenges() {
             </circle>
           </svg>
           <h3
-            className="lg:-mt-[192px] -mt-[-58px] absolute z-10 flex flex-col items-center gap-2 text-white text-lg sm:text-2xl md:text-3xl font-bold"
+            className="lg:-mt-[192px] -mt-[58px] absolute z-10 flex flex-col items-center gap-2 text-white text-lg sm:text-2xl md:text-3xl font-bold"
             data-aos="fade-up"
           >
             <span className="-rotate-1">ACCEPT</span>
