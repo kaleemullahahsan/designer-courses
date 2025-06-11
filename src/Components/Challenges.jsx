@@ -12,7 +12,7 @@ function Challenges() {
         >
           <img src={`${leftImg}`} alt="" />
         </div>
-        <div className="relative flex justify-center items-center w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden pt-10 bg-black">
+        <div className="relative flex justify-center items-center w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden pt-10">
           <svg
             viewBox="0 0 1000 600"
             className="absolute w-full h-full rotate-[20deg]"
