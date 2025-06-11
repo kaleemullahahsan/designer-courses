@@ -5,7 +5,7 @@ import footerArrow from "../assets/images/arrow_3.png";
 function Challenges() {
   return (
     <div className="py-40 container overflow-hidden">
-      <div className="md:px-12 p-5 flex lg:justify-between gap-5 justify-center">
+      <div className="md:px-12 p-5 flex lg:justify-between gap-0 md:gap-5 justify-center">
         <div
           className="before:top-52 before:left-0 uppercase font-semibold before:h-3 before:w-3 before:absolute relative before:bg-white"
           data-aos="fade-up"
