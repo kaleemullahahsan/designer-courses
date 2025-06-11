@@ -27,21 +27,7 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-  .dot {
-    offset-path: path("M 460,100 a 440,115 0 1,1 -0.1,0"); /* Oval path */
-    offset-rotate: 0deg;
-    animation: move 12s linear infinite;
-  }
 
-  .dot2 {
-    animation-delay: 6s;
-  }
-
-  @keyframes move {
-    to {
-      offset-distance: 100%;
-    }
-  }
   .container {
     max-width: 1500px;
     margin: auto;

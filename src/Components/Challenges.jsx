@@ -12,29 +12,45 @@ function Challenges() {
         >
           <img src={`${leftImg}`} alt="" />
         </div>
-        <div className="flex justify-center">
-          <svg width="1000" height="600" class="absolute rotate-20">
+        <div className="relative flex justify-center items-center w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden pt-10 bg-black">
+          <svg
+            viewBox="0 0 1000 600"
+            className="absolute w-full h-full rotate-[20deg]"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
-              d="
-    M 460,100
-    a 440,115 0 1,1 -0.1,0
-  "
+              id="motionPath"
+              d="M 460,100 a 440,115 0 1,1 -0.1,0"
               fill="none"
               stroke="white"
+              strokeWidth="1"
+              className="overflow-hidden"
             />
-          </svg>
 
-          <div className="relative w-[1000px] h-[600px] rotate-20">
-            <div className="absolute w-8 h-8 bg-purple-400 rounded-full dot"></div>
-            <div className="absolute w-8 h-8 bg-purple-400 rounded-full dot dot2"></div>
-          </div>
+            <circle r="15" fill="#a855f7">
+              <animateMotion dur="12s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#motionPath" />
+              </animateMotion>
+            </circle>
+
+            <circle r="15" fill="#a855f7">
+              <animateMotion
+                dur="12s"
+                begin="6s"
+                repeatCount="indefinite"
+                rotate="auto"
+              >
+                <mpath href="#motionPath" />
+              </animateMotion>
+            </circle>
+          </svg>
           <h3
-            className="absolute flex flex-col items-center gap-5 text-3xl mt-32"
+            className="lg:-mt-[192px] absolute z-10 flex flex-col items-center gap-2 text-white text-lg sm:text-2xl md:text-3xl font-bold"
             data-aos="fade-up"
           >
-            <span className="-rotate-1 ">Accept</span>
-            <span className="-rotate-1font-thin">New</span>
-            <span className="-rotate-1">Challeneges</span>
+            <span className="-rotate-1">ACCEPT</span>
+            <span className="-rotate-1 font-thin">NEW</span>
+            <span className="-rotate-1">CHALLENGES</span>
           </h3>
         </div>
 
