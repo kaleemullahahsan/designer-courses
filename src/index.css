@@ -14,7 +14,7 @@
     color: #ffffff;
     overflow-x: hidden;
   }
-  #root{
+  #root {
     overflow: hidden;
   }
 
@@ -27,23 +27,23 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-  @keyframes orbit {
-    0% {
-      transform: rotate(0deg) translateX(200px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translateX(200px) rotate(-360deg);
-    }
+  .dot {
+    offset-path: path("M 460,100 a 440,115 0 1,1 -0.1,0"); /* Oval path */
+    offset-rotate: 0deg;
+    animation: move 12s linear infinite;
   }
 
-  .animate-orbit {
-    animation: orbit 6s linear infinite;
+  .dot2 {
+    animation-delay: 6s;
   }
-  .opacity-10 span{
-    opacity: 100% !important;
+
+  @keyframes move {
+    to {
+      offset-distance: 100%;
+    }
   }
-  .container{
-    max-width:1500px;
+  .container {
+    max-width: 1500px;
     margin: auto;
   }
 }
@@ -52,16 +52,16 @@
   .nav-link {
     @apply py-1 hover:after:border-1 after:border-white hover:after:w-[100%]  hover:after:flex after:transition-all after:duration-300 after:ease-in-out after:absolute relative after:-bottom-4 after:left-0 after:w-0 after:border-0;
   }
-   .active{
-    @apply after:border-1 after:border-white after:w-[100%]  after:absolute relative after:-bottom-4 after:left-0
+  .active {
+    @apply after:border-1 after:border-white after:w-[100%]  after:absolute relative after:-bottom-4 after:left-0;
   }
-  .hero-head{
-    @apply text-7xl after:h-4 after:w-4 relative after:bottom-2 after:ml-3 after:absolute after:rounded-full after:bg-(--accent)
+  .hero-head {
+    @apply text-7xl after:h-4 after:w-4 relative after:bottom-2 after:ml-3 after:absolute after:rounded-full after:bg-(--accent);
   }
-  .pr-btn{
+  .pr-btn {
     @apply px-8 py-3 transition-all text-sm duration-150 ease-in-out uppercase rounded  font-semibold bg-(--accent) cursor-pointer;
   }
-  .pr-btn:hover{
+  .pr-btn:hover {
     @apply bg-[#7325f3];
   }
 }

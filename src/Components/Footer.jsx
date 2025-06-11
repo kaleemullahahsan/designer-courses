@@ -1,6 +1,7 @@
 function Footer() {
   return (
     <>
+     
       <div className="bg-(--accent) pt-30 overflow-hidden" data-aos="fade-in">
         <div className="md:px-15 p-5 grid md:grid-cols-2 pb-10 overflow-hidden container gap-20 ">
           <div className="grid md:grid-cols-2 gap-10 overflow-hidden">
